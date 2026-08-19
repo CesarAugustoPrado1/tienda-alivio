@@ -443,3 +443,30 @@ footer {
     margin: 0 auto;
   }
 }
+
+
+.free-shipping-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 18px;
+    padding: 8px 14px;
+    background: var(--primary);
+    color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    border-radius: var(--radius);
+}
+
+.free-shipping-badge::before {
+    content: "OK";
+    font-weight: 700;
+}
+
+.free-shipping-badge--sm {
+    margin-top: 0;
+    padding: 4px 10px;
+    font-size: 11px;
+}
