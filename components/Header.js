@@ -12,6 +12,7 @@ export default function Header() {
         <nav className="nav-links">
           <Link href="/">Inicio</Link>
           <Link href="/#productos">Productos</Link>
+              <Link href="/notas">Notas</Link>
         </nav>
         <Link href="/carrito" className="cart-link">
           Carrito {count > 0 ? `(${count})` : ""}
