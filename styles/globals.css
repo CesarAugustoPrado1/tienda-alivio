@@ -73,7 +73,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 0;
+    padding-top: 18px;
+      padding-bottom: 18px;
 }
 
 .brand {
@@ -320,7 +321,8 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
-  padding: 56px 0;
+    padding-top: 56px;
+      padding-bottom: 56px;
 }
 
 .pd-media {
