@@ -69,6 +69,7 @@ export default function ProductoPage({ producto }) {
 {agregado ? "Agregado ✓" : "Agregar al carrito"}
 </button>
   </div>
+    <p className="mono" style={{ marginTop: 16, fontSize: 12, color: "var(--ink-soft)" }}>Precio final para Buenos Aires y GBA. Para otras provincias, el total se ajusta automaticamente en el carrito.</p>
   </div>
   </div>
       <Footer />
