@@ -186,7 +186,7 @@ button {
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  border: 1px solid rgba(31, 61, 51, 0.18);
+    border: 2px solid rgba(201, 152, 47, 0.55);
   animation: ripple 4.5s ease-out infinite;
 }
 
