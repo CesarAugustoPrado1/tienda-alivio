@@ -5,6 +5,9 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { productos, getProducto } from "../../lib/productos";
 import { useCart } from "../../components/CartContext";
+import { ZONAS } from "../../lib/zonas";
+
+const ENVIO_REFERENCIA = ZONAS.caba_gba.envio;
 
 export async function getStaticPaths() {
     return {
@@ -47,14 +50,8 @@ export default function ProductoPage({ producto }) {
         <div className="pd-info">
             <span className="eyebrow">{producto.subtitulo}</span>
           <h1>{producto.nombre}</h1>
-          <div className="pd-price">${producto.precio.toLocaleString("es-AR")}</div>
-          <div
-            className="mono"
-            style={{ marginBottom: 20, display: "flex", alignItems: "center", gap: 8 }}
-          >
-            <span className="tag">Envío a todo el país</span>
-            desde ${(9500).toLocaleString("es-AR")} según tu provincia
-              </div>
+        <div className="pd-price">${(producto.precio + ENVIO_REFERENCIA).toLocaleString("es-AR")}</div>
+            <div className="free-shipping-badge" style={{ marginTop: 0, marginBottom: 20 }}>Envio gratis a todo el pais</div>
           <p className="pd-desc">{producto.descripcion}</p>
           <ul className="pd-benefits">
             {producto.beneficios.map((b) => (
