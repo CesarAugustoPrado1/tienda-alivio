@@ -540,3 +540,23 @@ footer {
 }
 
   
+
+
+.new-badge {
+    position: relative;
+    background: var(--accent);
+    color: var(--accent-ink);
+}
+
+.stock-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background: rgba(166, 67, 46, 0.12);
+    color: #a6432e;
+    border-radius: var(--radius);
+}
