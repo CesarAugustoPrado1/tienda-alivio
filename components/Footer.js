@@ -32,7 +32,9 @@ function FacebookIcon() {
 function TiktokIcon() {
         return (
                   <svg {...iconProps}>
-      <path d="M9 18a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+              <path d="M14 4v12" />
+                        <circle cx="10" cy="16" r="4" />
+                        <path d="M14 8a4 4 0 0 0 4-4" />
               </svg>
         );
 }
